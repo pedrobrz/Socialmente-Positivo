@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cardápio</h1>
+    <button onclick="alternarModo()" class="modo-btn">🌙 / ☀️</button>
+    <nav>
+      <a href="index.html">Sobre</a>
+      <a href="menu.html">Menu</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Nossas Opçoes</h2>
+
+    <button onclick="mostrarImagem('imagem-menu1')"> Ver cardapio</button>
+    <img id="imagem-menu1" class="imagem-menu" src="geral.jpg" alt="Cardápio principal">
+    
+    <button onclick="mostrarImagem('imagem-menu2')">Ver churros</button>
+    <img id="imagem-menu2" class="imagem-menu" src="churros.jpg" alt="Sobremesas">
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+

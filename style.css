@@ -1,0 +1,84 @@
+:root {
+    --cor-clara: #ffe4ec;
+    --cor-escura: #1e2a38;
+    --texto-claro: #222;
+    --texto-escuro: #fff;
+    --rosa: #fdaecb;
+    --azul: #243447;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--cor-clara);
+    color: var(--texto-claro);
+    transition: 0.3s;
+  }
+  
+  body.dark-mode {
+    background: var(--cor-escura);
+    color: var(--texto-escuro);
+  }
+  
+  header {
+    text-align: center;
+    background: repeating-linear-gradient(
+      45deg,
+      var(--rosa),
+      var(--rosa) 10px,
+      #fff 10px,
+      #fff 20px
+    );
+    padding: 20px;
+  }
+  
+  body.dark-mode header {
+    background: repeating-linear-gradient(
+      45deg,
+      var(--azul),
+      var(--azul) 10px,
+      #333 10px,
+      #333 20px
+    );
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .imagem-menu {
+    display: none;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  
+  .modo-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #ffd1dc;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  body.dark-mode .modo-btn {
+    background-color: #2e3a4f;
+    color: white;
+  }
+
+.sobrem{
+margin-left: 10%;
+margin-right: 10%;
+}
+  
